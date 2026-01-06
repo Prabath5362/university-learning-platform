@@ -20,10 +20,10 @@ Route::middleware('auth')->group(function () {
 
 
 Route::middleware("admin")->group(function(){
-    Route::get("/studentDetails",[AdminController::class,"studentDetails"])->name("admin.students");
+    Route::get("/students",[AdminController::class,"viewStudents"])->name("admin.students");
     Route::get("/addCource",[AdminController::class,"addCource"])->name("admin.addCource");
     Route::post("/addCource",[AdminController::class,"postAddCource"])->name("admin.postAddCource");
-    Route::get("/viewCource",[AdminController::class,"viewCource"])->name("admin.viewCource");
+    Route::get("/cource",[AdminController::class,"viewCource"])->name("admin.viewCource");
 });
 
 

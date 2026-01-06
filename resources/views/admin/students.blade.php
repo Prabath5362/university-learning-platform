@@ -5,48 +5,6 @@
 
         <h4 class="mb-4 text-center">Student Details</h4>
 
-        @php
-            $students = [
-                [
-
-                    'name' => 'Jamz Fernando',
-                    'reg' => 'SEU/IS/21/ICT/001',
-                    'tel' => '0754568978',
-                    'email' => 'jamz@gmail.com',
-                    'status' => 'active',
-                ],
-                [
-                    'name' => 'Nimal Perera',
-                    'reg' => 'SEU/IS/21/ICT/002',
-                    'tel' => '0771234567',
-                    'email' => 'nimalp@gmail.com',
-                    'status' => 'active',
-                ],
-                [
-                    'name' => 'Saman Silva',
-                    'reg' => 'SEU/IS/21/ICT/003',
-                    'tel' => '0719876543',
-                    'email' => 'saman.silva@gmail.com',
-                    'status' => 'inactive',
-                ],
-                [
-                    'name' => 'Kavindu Jayasinghe',
-                    'reg' => 'SEU/IS/21/ICT/004',
-                    'tel' => '0763456789',
-                    'email' => 'kavindu.j@gmail.com',
-                    'status' => 'active',
-                ],
-                [
-                    'name' => 'Tharindu Lakshan',
-                    'reg' => 'SEU/IS/21/ICT/005',
-                    'tel' => '0784561239',
-                    'email' => 'tharindu.l@gmail.com',
-                    'status' => 'inactive',
-                ],
-            ];
-
-        @endphp
-
         <div class="table-responsive">
             <table class="table table-bordered table-hover align-middle">
                 <thead class="table-dark">

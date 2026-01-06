@@ -3,15 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cource;
+use App\Models\User;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\Constraint\Count;
 
 class AdminController extends Controller
 {
-    function studentDetails(){
-        return view("admin.students");
-    }
+
 
     function addCource(){
         return view("admin.addCource");
@@ -47,6 +46,13 @@ class AdminController extends Controller
 
         return redirect()->route("admin.viewCource")->with("cource_message","Cource Added Successfully!");
 
+
+    }
+
+
+    function viewStudents(){
+        $students = User::where("user_type", "user")->get();
+        return view("admin.students",compact("students"));
 
     }
 
