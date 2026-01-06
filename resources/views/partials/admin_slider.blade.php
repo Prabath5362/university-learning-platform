@@ -16,7 +16,7 @@
             <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="coursesDropdown">
                 <li><a class="dropdown-item" href= {{ route('admin.addCource') }} style="font-size: 12px";><i
                             class="bi bi-plus-circle me-2"></i> Add Course</a></li>
-                <li><a class="dropdown-item" href="#" style="font-size: 12px";><i class="bi bi-eye me-2"></i> View
+                <li><a class="dropdown-item" href="{{ route("admin.viewCource") }}" style="font-size: 12px";><i class="bi bi-eye me-2"></i> View
                         Courses</a></li>
             </ul>
         </li>
